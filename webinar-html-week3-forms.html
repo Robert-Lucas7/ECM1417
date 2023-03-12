@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- Can specify version of html to use after "html" - otherwise it will be the most recent-->
+    <head>
+        <meta charset="UTF-8" />
+        <title>ECM1417 Web Dev | webinar example</title>
+    </head>
+    <body>
+        <!-- Content here -->
+        <div>
+            <h1>ECM1417 form example</h1>
+            <p>Here is an <b>example form</b> for personal details.</p> <!--Tags like <b> are called physical style tags-->
+        </div>
+        <hr> <!--Horizontal rule-->
+        <div> <!-- Div split the page into different sections-->
+            <form>
+                First name: <input text="input" placeholder="Enter name here..."/> <!--Using a label extends the clickable area of control elements-->
+                <br/>
+                Background experience: <textarea rows=4 name="background" placeholder="Please enter your previous experience here..."></textarea><!-- Stuff between tags is interpretted as the value of the tag -->
+                <br/>
+                Modules Studied: 
+                <input type="checkbox" name="ECM1400">ECM1400</input>
+                <input type="checkbox" name="ECM1410">ECM1410</input>
+                <br/>
+                Are you on the WIP programme?
+                <input type="radio" name="wip">Yes</input>
+                <input type="radio" name="wip">No</input>
+                <br/>
+                Which campus are you studying on?
+                <select>
+                    <optgroup label="Exeter">
+                        <option>Streatham</option>
+                        <option>St. Lukes</option>
+                        
+                    </optgroup>
+                    <optgroup label="Cornwall">
+                        <option>Truro</option>
+                    </optgroup>
+
+                </select>
+                <br/>
+                Input: <input type="password"/>
+                <br/>
+                <input type="submit" value="Submit"/> <!--Inferred as a button with action to submit-->
+            
+            </form>
+        </div>
+    </body>
+</html>
